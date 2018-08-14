@@ -16,7 +16,9 @@ request('http://codedemos.com/sampleblog', (error, response, html) => {
 		// const output = siteHeading.find('h1').text()
 		// const output = siteHeading.children('h1').text()
 		// const output = siteHeading.children('h1').next().text() // this will give us the following element because of the .next()
-		const output = siteHeading.children('h1').parent().text()
-		console.log(output)
+		// const output = siteHeading.children('h1').parent().text() // pretty much all jQuery stuff nothing new
+		// console.log(output)
+
+		
 	}
 });
