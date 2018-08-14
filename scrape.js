@@ -19,6 +19,11 @@ request('http://codedemos.com/sampleblog', (error, response, html) => {
 		// const output = siteHeading.children('h1').parent().text() // pretty much all jQuery stuff nothing new
 		// console.log(output)
 
-		
+		$('.nav-item a').each((i, el) => {
+			const item = $(el).text()
+			const link = $(el).attr('href')
+
+			console.log(link)
+		})
 	}
 });
