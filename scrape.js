@@ -15,7 +15,8 @@ request('http://codedemos.com/sampleblog', (error, response, html) => {
 		// this will look for an h1 tag and pull out the text within it. the two on top get the same thing.
 		// const output = siteHeading.find('h1').text()
 		// const output = siteHeading.children('h1').text()
-		const output = siteHeading.children('h1').next().text() // this will give us the following element because of the .next()
+		// const output = siteHeading.children('h1').next().text() // this will give us the following element because of the .next()
+		const output = siteHeading.children('h1').parent().text()
 		console.log(output)
 	}
 });
